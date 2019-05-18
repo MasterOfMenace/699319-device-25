@@ -9,14 +9,19 @@
     <a class="main-header-logo" href="index.html">
         <img src="img/device-logo.svg" alt="Логотип магазина «Device»" width="163" height="35">
       </a>
-      <p>Поиск по сайту</p>
-      <!-- здесь будет форма поиска -->
+      <form action="" method="GET" class="search">
+        <input type="search" name="search" id="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+        <button type="submit">Найти</button>
+      </form>
       <ul class="user-nav">
-        <li class="login-link">Войти</li>
+        <li class="login-link"><a href="profile.html">Валентин Петухов</a></li>
+        <li class="logout-link">
+          <a href="#" class="logout-button button">Выйти</a>
+        </li>
       </ul>
       <p>
-        <a href="#" class="compare-button">Сравнить</a>
-        <a href="#" class="cart-button">Корзина</a>
+        <a href="compare.html" class="compare-button">Сравнить</a>
+        <a href="cart.html" class="cart-button">Корзина</a>
       </p>
       <nav class="main-nav">
         <ul class="site-nav">
@@ -49,6 +54,54 @@
     <section class="filter">
       <h2>Фильтр</h2>
       <!-- Здесь будет форма -->
+      <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" 
+              type="checkbox" name="black" id="black" checked>
+              <label for="black">Черный</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" 
+              type="checkbox" name="white" id="white">
+              <label for="white">Белый</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" 
+              type="checkbox" name="blue" id="blue" checked>
+              <label for="blue">Синий</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" 
+              type="checkbox" name="red" id="red" checked>
+              <label for="red">Красный</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" 
+              type="checkbox" name="pink" id="pink">
+              <label for="pink">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <ul>
+            <li class="filter-option">
+              <input type="radio" name="bluetooth" id="bluetooth-yes" value="yes"
+              class="visually-hidden filter-input filter-input-checkbox" checked>
+              <label for="bluetooth-yes">Да</label>
+            </li>
+            <li class="filter-option">
+              <input type="radio" name="bluetooth" id="bluetooth-no" value="no"
+              class="visually-hidden filter-input filter-input-checkbox">
+              <label for="bluetooth-no">Нет</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="button filter-button">Показать</button>
+      </form>
     </section>
 
     <section class="catalog">
@@ -123,12 +176,14 @@
         <img src="img/device-logo.svg" alt="Логотип магазина «Device»" width="163" height="35">
       </a>
       <ul class="user-nav">
-        <li class="profile-link">Валентин Петухов</li>
-        <li class="logout-link">Выйти</li>
+        <li class="profile-link"><a href="profile.html">Валентин Петухов</a></li>
+        <li class="logout-link">
+          <a href="#" class="logout-button button">Выйти</a>
+        </li>
       </ul>
       <p>
-        <a href="#" class="compare-button">Сравнить</a>
-        <a href="#" class="cart-button">Корзина</a>
+        <a href="compare.html" class="compare-button">Сравнить</a>
+        <a href="cart.html" class="cart-button">Корзина</a>
       </p>
       <p class="contact-info">
         г. Москва, ул. Строителей, 15

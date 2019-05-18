@@ -9,14 +9,16 @@
       <a class="main-header-logo">
         <img src="img/device-logo.svg" width="163" height="35" alt="Логотип магазина «Device»">
       </a>
-      <p>Поиск по сайту</p>
-      <!-- здесь будет форма поиска -->
+      <form action="" method="GET" class="search">
+        <input type="search" name="search" id="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+        <button type="submit">Найти</button>
+      </form>
       <ul class="user-nav">
-        <li class="login-link">Войти</li>
+        <li class="login-link"><a href="login.html">Войти</a></li>
       </ul>
       <p>
-        <a href="#" class="compare-button">Сравнить</a>
-        <a href="#" class="cart-button">Корзина</a>
+        <a href="compare.html" class="compare-button">Сравнить</a>
+        <a href="cart.html" class="cart-button">Корзина</a>
       </p>
       <nav class="main-nav">
         <ul class="site-nav">
@@ -41,7 +43,7 @@
       <h1 class="visually-hidden">Интернет-магазин «Device»</h1>
 
       <section class="slider">
-        <h2 class="visually-hidden">Эксклюзив</h2> <!-- может лучше в див? -->
+        <h2 class="visually-hidden">Эксклюзив</h2>
         <div class="slide-item slide-item-1">
           <p class="slide-number">01</p>
           <img src="img/slide-1.png" alt="Селфи-палка" class="slider-img" width="384" height="486">
@@ -261,7 +263,7 @@
         <img src="img/device-logo.svg" alt="Логотип магазина «Device»" width="163" height="35">
       </a>
       <ul class="user-nav">
-        <li class="login-link">Войти</li>
+        <li class="login-link"><a href="login.html">Войти</a></li>
       </ul>
       <p>
         <a href="#" class="compare-button">Сравнить</a>
@@ -294,17 +296,26 @@
 
     <section class="modal modal-writeus">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <!-- Здесь будет форма -->
-      <button class="button">Отправить</button>
-      <span class="modal-close">х</span>
+      <form class="writeus" action="https://echo.htmlacademy.ru">
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+        <label for="email">Ваш e-mail:</label>
+        <input type="email" name="email" id="email" placeholder="email@example.com">
+        <p>
+          <label for="letter">Текст письма:</label>
+          <textarea name="letter" id="letter" cols="100" rows="10" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button type="button" class="modal-close" aria-label="Закрыть форму обратной связи">х</button>
     </section>
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как нас найти</h2>
       <a href="https://yandex.ru/maps/213/moscow/?ll=37.529654%2C55.686980&mode=search&sll=37.622504%2C55.753215&sspn=1.532593%2C0.493346&text=%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9%2015&z=15">
-        <img src="img/map-big.jpg" alt="Адрес на карте" width="960" height="559">
+        <img src="img/map-big.jpg" alt="Офис компании по адресу ул. Строителей 15, Москва" width="960" height="559">
       </a>
-      <span class="modal-close">х</span>
+      <button type="button" class="modal-close" aria-label="Закрыть карту">х</button>
     </section>
   </body>
 </html>
