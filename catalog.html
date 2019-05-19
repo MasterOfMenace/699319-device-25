@@ -53,8 +53,11 @@
 
     <section class="filter">
       <h2>Фильтр</h2>
-      <!-- Здесь будет форма -->
       <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Стоимость</legend>
+          <!-- здесь должен быть ползунок -->
+        </fieldset>
         <fieldset>
           <legend>Цвет</legend>
           <ul>
@@ -108,10 +111,16 @@
       <h2 class="visually-hidden">Список товаров</h2>
 
       <div class="sort">
-        <span>Сортировка:</span>
-        <span>По цене</span>
-        <span>По типу</span>
-        <span>По популярности</span>
+        <h3>Сортировка:</h3>
+        <ul>
+          <li class="sort-item"><a href="#">По цене</a></li>
+          <li class="sort-item"><a href="#">По типу</a></li>
+          <li class="sort-item"><a href="#">По популярности</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">По возрастанию</a></li>
+          <li><a href="#">По убыванию</a></li>
+        </ul>
       </div>
 
       <ul class="catalog-list">
@@ -161,13 +170,13 @@
         </li>
       </ul>
       <div class="pagination">
+        <button type="button" class="pagination-btn pagination-btn-back">Назад</button>
         <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current">1</li>
-          <li class="pagination-item">2</li>
-          <li class="pagination-item">3</li>
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
         </ul>
-        <button class="pagination-btn pagination-btn-back">Назад</button>
-        <button class="pagination-btn pagination-btn-back">Вперед</button>
+        <button type="button" class="pagination-btn pagination-btn-back">Вперед</button>
       </div>
     </section>
 
