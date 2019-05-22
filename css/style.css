@@ -1,0 +1,431 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("..fonts/gilroyextrabold.woff") format(woff);
+  src: url("..fonts/gilroyextrabold.woff2") format(woff2);
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("..fonts/gilroylight.woff") format(woff);
+  src: url("..fonts/gilroylight.woff2") format(woff2);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("..fonts/opensans.woff") format(woff);
+  src: url("..fonts/opensans.woff2") format(woff2);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("..fonts/opensanslight.woff") format(woff);
+  src: url("..fonts/opensanslight.woff2") format(woff2);
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+  
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.main-header {
+  background-color: #f7e296;
+}
+
+.main-header-logo svg:hover,
+.main-header-logo svg:focus {
+  fill-opacity: 0.6;
+}
+
+.main-header-logo svg:active {
+  fill-opacity: 0.3;
+}
+
+.search input {
+  border: none;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search input:hover::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search input:focus {
+  border-bottom: 2px solid #000000;
+}
+
+.search button {
+  font: inherit;
+  background: inherit;
+  border: 2px solid #000000;
+  color: #000000;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.search button:hover,
+.search button:focus {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.search button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.user-nav {
+  list-style: none;
+}
+
+.login-link a:hover,
+.logout-link a:hover,
+.profile-link a:hover,
+.compare-button:hover,
+.cart-button:hover,
+.login-link a:focus,
+.logout-link a:focus,
+.profile-link a:focus,
+.compare-button:focus,
+.cart-button:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.login-link a:active,
+.logout-link a:active,
+.profile-link a:active,
+.compare-button:active,
+.cart-button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-nav {
+  font-family: "Gilroy";
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 800;
+}
+
+.site-nav {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.sub-menu {
+  list-style: none;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 36px;
+  text-transform: none;
+}
+
+.site-nav a:hover,
+.sub-menu a:hover,
+.site-nav a:focus,
+.sub-menu a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.site-nav a:active,
+.sub-menu a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.slider {
+  display: none;
+}
+
+.categories {
+  display: none;
+}
+
+.services {
+  display: none;
+}
+
+.brands {
+  display: none;
+}
+
+.about h2,
+.contacts h2 {
+  font-family: "Gilroy";
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.delivery-list {
+  list-style-type: circle;
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.button {
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #000000;
+  border: none;
+  letter-spacing: 5px;
+  background-image: linear-gradient(#fff 30%, #f0c52e 30%, #f0c52e 70%, #fff 60%);
+}
+
+.button:hover, 
+.button:focus {
+  background-image: none;
+  background-color: #f0c52e;
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.page-title {
+  font-family: "Gilroy";
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 48px;
+  color: #000000;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs-current,
+.breadcrumbs a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.filters {
+  background-color: #efefef;
+  color: #000000;
+}
+
+.filters h2 {
+  background-color: #dcdcdc;
+  font-family: "Gilroy";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-family: "Gilroy";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.filter ul {
+  list-style: none;
+  font-size: 14px;
+  line-height: 40px;
+
+}
+
+.filter-input:disabled + label {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.sort {
+  display: none;
+}
+
+.catalog-list {
+  list-style: none;
+  font-family: "Gilroy";
+  line-height: 24px; 
+}
+
+.catalog-list h3 {
+  font-size: 16px;
+  font-weight: 800; 
+}
+
+.catalog-item-price {
+  font-size: 14px;
+  font-weight: 300;
+  color: #464646;
+}
+
+.pagination {
+  display: none;
+}
+
+.main-footer {
+  color: #fff;
+  background-color: #464646;
+}
+
+.footer-logo svg {
+  fill: #ffc600;
+}
+
+.footer-logo svg:hover,
+.footer-logo svg:focus {
+  fill-opacity: 0.6;
+}
+
+.footer-logo svg:active {
+  fill-opacity: 0.3;
+}
+
+.main-footer a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-login a:hover,
+.footer-logout a:hover,
+.footer-profile a:hover,
+.main-footer .compare-button:hover,
+.main-footer .cart-button:hover,
+.footer-login a:focus,
+.footer-logout a:focus,
+.footer-profile a:focus,
+.main-footer .compare-button:focus,
+.main-footer .cart-button:focus {
+  color: #fff;
+}
+
+.footer-login a:active,
+.footer-logout a:active,
+.footer-profile a:active,
+.main-footer .compare-button:active,
+.main-footer .cart-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-info {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.footer-nav {
+  list-style: none;
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.footer-nav a {
+  color: #fff;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-nav a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-social ul {
+  list-style: none;
+  text-align: center;
+}
+
+.footer-social a {
+  color: #7e7e7e;
+}
+
+.footer-copyright a:hover,
+.footer-copyright a:focus {
+  fill-opacity: 0.6;
+}
+
+.footer-copyright a:active {
+  fill-opacity: 0.3;
+}
+
+.modal {
+  color: #000000;
+  background-color: #fff;
+  font-family: "Gilroy";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+}
+
+.writeus input,
+.writeus textarea {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.writeus input::placeholder,
+.writeus textarea::placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.writeus input:hover,
+.writeus textarea:hover {
+  background-color: #eaeaea;
+}
+
+.writeus input:focus,
+.writeus textarea:focus {
+  border: 3px solid #f7e296;
+  background-color: #fff;
+  outline: none;
+}
+
+.writeus input:invalid {
+  background-color: #f6dada;
+  border: none;
+}
