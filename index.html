@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>Интернет-магазин «Девайс»</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/style.css">   
+    <!-- <link rel="stylesheet" href="../outline.css">  -->
   </head>
   <body>
     <header class="main-header container">
@@ -32,12 +33,21 @@
             <li>
               <a href="catalog.html">Каталог товаров</a>
               <ul class="sub-menu">
-                <li><a href="catalog.html">Виртуальная реальность</a></li>
-                <li><a href="catalog.html">Моноподы для селфи</a></li>
-                <li><a href="catalog.html">Экшн-камеры</a></li>
-                <li><a href="catalog.html">Фитнес-браслеты</a></li>
-                <li><a href="catalog.html">Умные часы</a></li>
-                <li><a href="catalog.html">Квадрокоптеры</a></li>
+                <div class="column-1">
+
+                  <li><a href="catalog.html">Виртуальная реальность</a></li>
+                  <li><a href="catalog.html">Моноподы для селфи</a></li>
+                  <li><a href="catalog.html">Экшн-камеры</a></li>
+                </div>
+                <div class="column-2">
+
+                  <li><a href="catalog.html">Фитнес-браслеты</a></li>
+                  <li><a href="catalog.html">Умные часы</a></li>
+                </div>
+                <div class="column-3">
+
+                  <li><a href="catalog.html">Квадрокоптеры</a></li>
+                </div>
               </ul>
             </li>
             <li><a href="delivery.html">Доставка</a></li>
@@ -54,83 +64,101 @@
         <h2 class="visually-hidden">Эксклюзив</h2>
         <div class="slide-item slide-item-1">
           <p class="slide-number">01</p>
-          <img src="img/slide-1.png" alt="Селфи-палка" class="slider-img" width="384" height="486">
-          <dl>
-            <dt>Делай селфи, как Бен Стиллер!</dt>
-            <dd>Самая длинная палка для селфи доступна в нашем магазине.
-              Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-            </dd>
-          </dl>
-          <p>
-            <a href="catalog.html" class="button">Подробнее</a>
-            <span class="slider-dot slider-dot-active"></span>
-            <span class="slider-dot"></span>
-            <span class="slider-dot"></span>
-          </p>
-          
-          <table>
-            <tr>
-              <th>8,5 м</th>
-              <th>5 кг</th>
-              <th>Карбон</th>
-            </tr>
-            <tr>
-              <td>Длина палки</td>
-              <td>Вес палки</td>
-              <td>Материал</td>
-            </tr>
-          </table>
+          <div class="slide-content-wrapper">
+
+            <img src="img/slide-1.png" alt="Селфи-палка" class="slider-img" width="384" height="486">
+            <div class="slide-description-wrapper">
+
+              <dl>
+                <dt>Делай селфи, как Бен Стиллер!</dt>
+                <dd>Самая длинная палка для селфи доступна в нашем магазине.
+                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                </dd>
+              </dl>
+              <p>
+                <a href="catalog.html" class="button">Подробнее</a>
+                <span class="slider-dot slider-dot-active"></span>
+                <span class="slider-dot"></span>
+                <span class="slider-dot"></span>
+              </p>
+              
+              <table>
+                <tr>
+                  <th>8,5 м</th>
+                  <th>5 кг</th>
+                  <th>Карбон</th>
+                </tr>
+                <tr>
+                  <td>Длина палки</td>
+                  <td>Вес палки</td>
+                  <td>Материал</td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
 
         <div class="slide-item slide-item-2">
             <p class="slide-number">02</p>
-            <img src="img/slide-2.png" alt="Фитнес-браслет" class="slider-img" width="345" height="485">
-            <dl>
-              <dt>Худеем правильно!</dt>
-              <dd>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</dd>
-            </dl>
-            <p>
-              <a href="catalog.html" class="button">Подробнее</a>
-              <span class="slider-dot"></span>
-              <span class="slider-dot slider-dot-active"></span>
-              <span class="slider-dot"></span>
-            </p>
-            
-            <table>
-              <tr>
-                <th>48 часов</th>
-              </tr>
-              <tr>
-                <td>Без подзарядки</td>
-              </tr>
-            </table>
-          </div>
+            <div class="slide-content-wrapper">
 
-          <div class="slide-item slide-item-3">
-            <p class="slide-number">03</p>
+              <img src="img/slide-2.png" alt="Фитнес-браслет" class="slider-img" width="345" height="485">
+              <div class="slide-description-wrapper">
+
+                <dl>
+                  <dt>Худеем правильно!</dt>
+                  <dd>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</dd>
+                </dl>
+                <p>
+                  <a href="catalog.html" class="button">Подробнее</a>
+                  <span class="slider-dot"></span>
+                  <span class="slider-dot slider-dot-active"></span>
+                  <span class="slider-dot"></span>
+                </p>
+                
+                <table>
+                  <tr>
+                    <th>48 часов</th>
+                  </tr>
+                  <tr>
+                    <td>Без подзарядки</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+        </div>
+
+        <div class="slide-item slide-item-3">
+          <p class="slide-number">03</p>
+          <div class="slide-content-wrapper">
+
             <img src="img/slide-3.png" alt="Квадрокоптер" class="slider-img" width="526" height="334">
-            <dl>
-              <dt>Порхает как бабочка, жалит как пчела!</dt>
-              <dd>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</dd>
-            </dl>
-            <p>
-              <a href="catalog.html" class="button">Подробнее</a>
-              <span class="slider-dot"></span>
-              <span class="slider-dot"></span>
-              <span class="slider-dot slider-dot-active"></span>
-            </p>
-            
-            <table>
-              <tr>
-                <th>800 м</th>
-                <th>50 м</th>
-              </tr>
-              <tr>
-                <td>Дальность полета</td>
-                <td>Радиус поражения</td>
-              </tr>
-            </table>
+            <div class="slide-description-wrapper">
+                
+              <dl>
+                <dt>Порхает как бабочка, жалит как пчела!</dt>
+                <dd>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</dd>
+              </dl>
+              <p>
+                <a href="catalog.html" class="button">Подробнее</a>
+                <span class="slider-dot"></span>
+                <span class="slider-dot"></span>
+                <span class="slider-dot slider-dot-active"></span>
+              </p>
+              
+              <table>
+                <tr>
+                  <th>800 м</th>
+                  <th>50 м</th>
+                </tr>
+                <tr>
+                  <td>Дальность полета</td>
+                  <td>Радиус поражения</td>
+                </tr>
+              </table>
+            </div>
           </div>
+        </div>
       </section>
 
       <section class="categories">
@@ -197,20 +225,29 @@
             <button class="button">Гарантия</button>
             <button class="button">Кредит</button>
           </div>
-          <div class="services-slide services-slide-1">
-            <h3>Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            <img src="img/delivery.svg" alt="Доставка" width="136" height="164">
-          </div>
-          <div class="services-slide services-slide-2">
-            <h3>Гарантия</h3>
-            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-            <img src="img/warranty.svg" alt="Гарантия" width="171" height="194">
-          </div>
-          <div class="services-slide services-slide-3">
-            <h3>Кредит</h3>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-            <img src="img/credit.svg" alt="Кредит" width="156" height="186">
+
+          <div class="services-sliders-wrapper">
+            <div class="services-slide services-slide-1">
+              <div class="services-slide-description-wrapper">
+                <h3>Доставка</h3>
+                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              </div>
+              <img src="img/delivery.svg" alt="Доставка" width="136" height="164">
+            </div>
+            <div class="services-slide services-slide-2">
+              <div class="services-slide-description-wrapper">
+                <h3>Гарантия</h3>
+                <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+              </div>
+              <img src="img/warranty.svg" alt="Гарантия" width="171" height="194">
+            </div>
+            <div class="services-slide services-slide-3">
+              <div class="services-slide-description-wrapper">
+                <h3>Кредит</h3>
+                <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+              </div>
+              <img src="img/credit.svg" alt="Кредит" width="156" height="186">
+            </div>
           </div>
         </div>
       </section>
