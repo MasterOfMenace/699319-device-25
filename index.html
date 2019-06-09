@@ -5,7 +5,6 @@
     <title>Интернет-магазин «Девайс»</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">   
-    <!-- <link rel="stylesheet" href="../outline.css">  -->
   </head>
   <body>
     <header class="main-header container">
@@ -65,103 +64,94 @@
 
       <section class="slider container">
         <h2 class="visually-hidden">Эксклюзив</h2>
-        <div class="slide-item slide-item-1">
-          <p class="slide-number">01</p>
-          <div class="slide-content-wrapper">
-
-            <img src="img/slide-1.png" alt="Селфи-палка" class="slider-img" width="384" height="486">
-            <div class="slide-description-wrapper">
-
-              <dl>
-                <dt>Делай селфи, как Бен Стиллер!</dt>
-                <dd>Самая длинная палка для селфи доступна в нашем магазине.
-                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-                </dd>
-              </dl>
-              <p>
-                <a href="catalog.html" class="button">Подробнее</a>
-                <span class="slider-dot slider-dot-active"></span>
-                <span class="slider-dot"></span>
-                <span class="slider-dot"></span>
-              </p>
-              
-              <table>
-                <tr>
-                  <th>8,5 м</th>
-                  <th>5 кг</th>
-                  <th>Карбон</th>
-                </tr>
-                <tr>
-                  <td>Длина палки</td>
-                  <td>Вес палки</td>
-                  <td>Материал</td>
-                </tr>
-              </table>
-            </div>
-          </div>
+        <input type="radio" name="toggle" id="special-1" class="visually-hidden" checked>
+        <input type="radio" name="toggle" id="special-2" class="visually-hidden">
+        <input type="radio" name="toggle" id="special-3" class="visually-hidden">
+        <div class="slider-controls">
+          <label for="special-1">Первый слайд</label>
+          <label for="special-2">Второй слайд</label>
+          <label for="special-3">Третий слайд</label>
         </div>
+        <ul class="slider-list">
+          <li class="slide-item slide" id="slide-1">
+              <p class="slide-number">01</p>
+              <div class="slide-content-wrapper">
+                <div class="slide-img-wrapper">
 
-        <div class="slide-item slide-item-2">
-            <p class="slide-number">02</p>
-            <div class="slide-content-wrapper">
-
-              <img src="img/slide-2.png" alt="Фитнес-браслет" class="slider-img" width="345" height="485">
-              <div class="slide-description-wrapper">
-
-                <dl>
-                  <dt>Худеем правильно!</dt>
-                  <dd>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</dd>
-                </dl>
-                <p>
-                  <a href="catalog.html" class="button">Подробнее</a>
-                  <span class="slider-dot"></span>
-                  <span class="slider-dot slider-dot-active"></span>
-                  <span class="slider-dot"></span>
-                </p>
-                
-                <table>
-                  <tr>
-                    <th>48 часов</th>
-                  </tr>
-                  <tr>
-                    <td>Без подзарядки</td>
-                  </tr>
-                </table>
+                  <img src="img/slide-1.png" alt="Селфи-палка" class="slider-img" width="384" height="486">
+                </div>
+                <div class="slide-description-wrapper">
+                  <dl>
+                    <dt>Делай селфи, как&nbsp;Бен&nbsp;Стиллер!</dt>
+                    <dd>Самая длинная палка для селфи доступна в нашем магазине.<br>
+                      Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                    </dd>
+                  </dl>
+                    <a href="catalog.html" class="button">Подробнее</a>
+                  <table>
+                    <tr>
+                      <th>8,5 м</th>
+                      <th>5 кг</th>
+                      <th>Карбон</th>
+                    </tr>
+                    <tr>
+                      <td>Длина палки</td>
+                      <td>Вес палки</td>
+                      <td>Материал</td>
+                    </tr>
+                  </table>
+                </div>
               </div>
-            </div>
-        </div>
-
-        <div class="slide-item slide-item-3">
-          <p class="slide-number">03</p>
-          <div class="slide-content-wrapper">
-
-            <img src="img/slide-3.png" alt="Квадрокоптер" class="slider-img" width="526" height="334">
-            <div class="slide-description-wrapper">
-                
-              <dl>
-                <dt>Порхает как бабочка, жалит как пчела!</dt>
-                <dd>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</dd>
-              </dl>
-              <p>
-                <a href="catalog.html" class="button">Подробнее</a>
-                <span class="slider-dot"></span>
-                <span class="slider-dot"></span>
-                <span class="slider-dot slider-dot-active"></span>
-              </p>
-              
-              <table>
-                <tr>
-                  <th>800 м</th>
-                  <th>50 м</th>
-                </tr>
-                <tr>
-                  <td>Дальность полета</td>
-                  <td>Радиус поражения</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
+          </li>
+          <li class="slide-item slide" id="slide-2">
+              <p class="slide-number">02</p>
+              <div class="slide-content-wrapper">
+                <div class="slide-img-wrapper">
+                  <img src="img/slide-2.png" alt="Фитнес-браслет" class="slider-img" width="345" height="485">
+                </div>
+                <div class="slide-description-wrapper">
+                  <dl>
+                    <dt>Худеем <br> правильно!</dt>
+                    <dd>Мотивирующие фитнес-браслеты помогут найти в себе силы <br> не пропускать занятия и соблюдать диету.</dd>
+                  </dl>
+                    <a href="catalog.html" class="button">Подробнее</a>
+                  <table>
+                    <tr>
+                      <th>48 часов</th>
+                    </tr>
+                    <tr>
+                      <td>Без подзарядки</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+          </li>
+          <li class="slide-item slide" id="slide-3">
+              <p class="slide-number">03</p>
+              <div class="slide-content-wrapper">
+                <div class="slide-img-wrapper">
+                  <img src="img/slide-3.png" alt="Квадрокоптер" class="slider-img" width="526" height="334">
+                </div>   
+                <div class="slide-description-wrapper">      
+                  <dl>
+                    <dt>Порхает как&nbsp;бабочка, жалит как пчела!</dt>
+                    <dd>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным&nbsp;лазером,&nbsp;замаскированным под стандартную камеру.</dd>
+                  </dl>
+                    <a href="catalog.html" class="button">Подробнее</a>
+                  <table>
+                    <tr>
+                      <th>800 м</th>
+                      <th>50 м</th>
+                    </tr>
+                    <tr>
+                      <td>Дальность полета</td>
+                      <td>Радиус поражения</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+          </li>
+        </ul>  
       </section>
 
       <section class="categories container">
@@ -225,37 +215,42 @@
           <h2 class="visually-hidden">Услуги</h2>
           
           <div class="services-slider">
-            <div class="services-slider-buttons">
-              <button class="button">Доставка</button>
-              <button class="button">Гарантия</button>
-              <button class="button">Кредит</button>
+
+            <input type="radio" name="serv-toggle" id="serv-slide-1" class="visually-hidden" checked>
+            <input type="radio" name="serv-toggle" id="serv-slide-2" class="visually-hidden">
+            <input type="radio" name="serv-toggle" id="serv-slide-3" class="visually-hidden">
+
+            <div class="services-slider-controls">
+              <label for="serv-slide-1">Доставка</label>
+              <label for="serv-slide-2">Гарантия</label>
+              <label for="serv-slide-3">Кредит</label>
             </div>
             
-            <div class="services-sliders-wrapper">
-              <div class="services-slide services-slide-1">
-                <div class="services-slide-description-wrapper">
-                  <h3>Доставка</h3>
-                  <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            <ul class="services-slider-list">
+              <li class="services-slider-item slide" id="serv-slide-1">
+                <div class="services-slide-wrapper services-slide-1">
+                  <div class="services-slide-description">
+                    <h3>Доставка</h3>
+                    <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                  </div>
                 </div>
-                <img src="img/delivery.svg" alt="Доставка" width="136" height="164">
-              </div>
-              <div class="services-slide services-slide-2">
-                <div class="services-slide-description-wrapper">
-                  <h3>Гарантия</h3>
-                  <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+              </li>
+              <li class="services-slider-item slide" id="serv-slide-2">
+                  <div class="services-slide-wrapper  services-slide-2">
+                      <div class="services-slide-description">
+                        <h3>Гарантия</h3>
+                        <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. <br> Товар, не дом, конечно же.</p>
+                      </div>
+              </li>
+              <li class="services-slider-item slide" id="serv-slide-3">
+                <div class="services-slide-wrapper services-slide-3">
+                  <div class="services-slide-description">
+                    <h3>Кредит</h3>
+                    <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия&nbsp;кредита. Выгодные для нашего банка, разумеется.</p>
+                  </div>
                 </div>
-                <img src="img/warranty.svg" alt="Гарантия" width="171" height="194">
-              </div>
-              <div class="services-slide services-slide-3">
-                <div class="services-slide-description-wrapper">
-                  <h3>Кредит</h3>
-                  <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-                </div>
-                <img src="img/credit.svg" alt="Кредит" width="156" height="186">
-              </div>
-            </div>
-          </div>
-        </div>
+              </li>
+            </ul>
       </section>
 
       <section class="brands container">
@@ -288,24 +283,28 @@
       <div class="columns-wrapper container">
         <section class="about">
           <h2>О нас</h2>
-          <p>Огромный выбор гаджетов не оставит равнодушным гика,<br> который есть в каждом из нас.</p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки<br> России! DEVICE работает со многими транспортными компаниями:</p>
-          <ul class="delivery-list">
-            <li class="delivery-list-item">Деловые Линии</li>
-            <li class="delivery-list-item">Автотрейдинг</li>
-            <li class="delivery-list-item">ЖелДорЭкспедиция</li>
-          </ul>
+          <div class="about-description">
+            <p>Огромный выбор гаджетов не оставит равнодушным гика,<br> который есть в каждом из нас.</p>
+          </div>
+          <div class="about-delivery">
+            <p>Мы можем доставить ваш товар в самые отдаленные точки<br> России! DEVICE работает со многими транспортными компаниями:</p>
+            <ul class="delivery-list">
+              <li class="delivery-list-item">Деловые Линии</li>
+              <li class="delivery-list-item">Автотрейдинг</li>
+              <li class="delivery-list-item">ЖелДорЭкспедиция</li>
+            </ul>
+          </div>
           <a href="about.html" class="button">Подробнее о нас</a>
         </section>
         
         <section class="contacts">
         <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <!-- <div class="map-wrapper"> -->
-          <a class="map-wrapper" href="img/map-large.jpg">
+        <div class="contacts-description">
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        </div>
+          <a class="map-wrapper" href="img/map-big.jpg">
             <img src="img/map.jpg" alt="Карта" class="map-img" width="560" height="222">
           </a>
-        <!-- </div> -->
         <a href="write-us.html" class="button">Напишите нам</a>
       </section>
     </div>
@@ -338,7 +337,7 @@
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
           <p class="contact-info">
-            +7(495)495-95-95
+            Тел.: +7(495)495-95-95
           </p>
         </div>
         <div class="footer-bottom">
