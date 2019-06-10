@@ -400,7 +400,7 @@ a {
   top: 325px;
   right: 80px;
   font-size: 0;
-  z-index: 10;
+  z-index: 3;
 }
 
 .slider-controls label{
@@ -653,23 +653,23 @@ a {
   background-color: #f0c52e;
 }
 
-#serv-slide-1:checked ~ .services-slider-list #serv-slide-1,
-#serv-slide-2:checked ~ .services-slider-list #serv-slide-2,
-#serv-slide-3:checked ~ .services-slider-list #serv-slide-3 {
+#serv-toggle-1:checked ~ .services-slider-list #serv-slide-1,
+#serv-toggle-2:checked ~ .services-slider-list #serv-slide-2,
+#serv-toggle-3:checked ~ .services-slider-list #serv-slide-3 {
   display: block;
 }
 
-#serv-slide-1:checked ~ .services-slider-controls label[for="serv-slide-1"],
-#serv-slide-2:checked ~ .services-slider-controls label[for="serv-slide-2"],
-#serv-slide-3:checked ~ .services-slider-controls label[for="serv-slide-3"] {
+#serv-toggle-1:checked ~ .services-slider-controls label[for="serv-toggle-1"],
+#serv-toggle-2:checked ~ .services-slider-controls label[for="serv-toggle-2"],
+#serv-toggle-3:checked ~ .services-slider-controls label[for="serv-toggle-3"] {
   color: #f7e184;
   background-color: #000000;
   background-image: none;
 }
 
-#serv-slide-1:checked ~ .services-slider-controls label[for="serv-slide-1"]::after,
-#serv-slide-2:checked ~ .services-slider-controls label[for="serv-slide-2"]::after,
-#serv-slide-3:checked ~ .services-slider-controls label[for="serv-slide-3"]::after {
+#serv-toggle-1:checked ~ .services-slider-controls label[for="serv-toggle-1"]::after,
+#serv-toggle-2:checked ~ .services-slider-controls label[for="serv-toggle-2"]::after,
+#serv-toggle-3:checked ~ .services-slider-controls label[for="serv-toggle-3"]::after {
   display: block;
 }
 
@@ -1655,12 +1655,13 @@ button[type="submit"] {
   line-height: 24px;
   font-weight: 800;
   position: fixed;
+  z-index: 4;
 }
 
 .modal-writeus {
   display: none;
   width: 763px;
-  top: 200px;
+  top: 70px;
   left: 50%;
   margin-left: -475px;
   box-shadow: 0px 10px 20px 0px rgba(4, 6, 6, 0.2);
@@ -1773,7 +1774,7 @@ button[type="submit"] {
 .modal-map {
   display: none;
   width: 960px;
-  top: 150px;
+  top: 70px;
   left: 50%;
   margin-left: -475px;
   box-shadow: 0px 10px 20px 0px rgba(4, 6, 6, 0.2);
