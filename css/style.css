@@ -2044,6 +2044,16 @@ button[type="submit"] {
   fill-opacity: 0.3;
 }
 
+@keyframes move {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .modal {
   color: #000000;
   background-color: #fff;
@@ -2111,6 +2121,7 @@ button[type="submit"] {
   cursor: pointer;
   top: 22px;
   right: 22px;
+  z-index: 2;
 }
 
 .modal-close:hover,
@@ -2198,6 +2209,11 @@ button[type="submit"] {
   border: none;
 }
 
+.writeus .input-invalid {
+  background-color: #f6dada;
+  border: none;
+}
+
 .modal-map {
   display: none;
   width: 960px;
@@ -2208,8 +2224,27 @@ button[type="submit"] {
           box-shadow: 0px 10px 20px 0px rgba(4, 6, 6, 0.2);
 }
 
+.modal-map iframe {
+  position: relative;
+  border: none;
+  z-index: 2;
+}
+
+.modal-map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0;
+}
+
 .modal a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.modal-show {
+  display: block;
+  animation: move 0.5s;
 }

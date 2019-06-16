@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>Интернет-магазин «Девайс»</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">   
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>   
   </head>
   <body>
     <header class="main-header container">
@@ -291,7 +292,7 @@
           <a class="map-wrapper" href="https://yandex.ru/maps/213/moscow/?ll=37.529654%2C55.686980&mode=search&sll=37.907036%2C55.660744&sspn=0.023947%2C0.007727&text=%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%20%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9%2015&z=16">
             <img src="img/map.jpg" alt="Карта" class="map-img" width="560" height="222">
           </a>
-        <a href="#" class="button">Напишите нам</a>
+        <a href="#" class="button writeus-button">Напишите нам</a>
       </section>
     </div>
     </main>
@@ -364,9 +365,11 @@
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как нас найти</h2>
       <a href="https://yandex.ru/maps/213/moscow/?ll=37.529654%2C55.686980&mode=search&sll=37.622504%2C55.753215&sspn=1.532593%2C0.493346&text=%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9%2015&z=15">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCSNf62z" width="960" height="559" frameborder="1" allowfullscreen="true"></iframe>
         <img src="img/map-big.jpg" alt="Офис компании по адресу ул. Строителей 15, Москва" width="960" height="559">
       </a>
       <button type="button" class="modal-close" aria-label="Закрыть карту">х</button>
     </section>
+    <script src="js/main.js"></script>
   </body>
 </html>
