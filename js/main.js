@@ -50,18 +50,20 @@ writeusButton.addEventListener("click", function(event) {
 writeusCloseButton.addEventListener("click", function(event) {
   event.preventDefault();
   writeusPopup.classList.toggle("modal-show");
+  inputName.classList.remove("input-invalid");
+  email.classList.remove("input-invalid");
+  letter.classList.remove("input-invalid");
 })
 
 form.addEventListener("submit", function(event) {
-  if (!name.value || !email.value || !letter.value) {
+  if (!inputName.value || !email.value || !letter.value) {
     event.preventDefault();
-    name.classList.add("input-invalid");
+    inputName.classList.add("input-invalid");
     email.classList.add("input-invalid");
-    letter.classList.add("input-invalid");
-    console.log("Write message");    
+    letter.classList.add("input-invalid");   
   } else {
     if (isLocalStorageSupport) {
-      localStorage.setItem("name", name.value);
+      localStorage.setItem("inputName", inputName.value);
       localStorage.setItem("email", email.value);
     }
   }
@@ -82,6 +84,9 @@ window.addEventListener("keydown", function(event) {
     event.preventDefault();
     if (writeusPopup.classList.contains("modal-show")) {
       writeusPopup.classList.remove("modal-show");
+      inputName.classList.remove("input-invalid");
+      email.classList.remove("input-invalid");
+      letter.classList.remove("input-invalid");
     } else if (mapPopup.classList.contains("modal-show")) {
       mapPopup.classList.remove("modal-show");
     }
