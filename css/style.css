@@ -2250,12 +2250,6 @@ button[type="submit"] {
   margin: 0;
 }
 
-.modal a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .modal-show {
   display: block;
   -webkit-animation: move 0.5s;
